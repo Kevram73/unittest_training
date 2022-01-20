@@ -6,9 +6,9 @@ class TwoNumbersOperations:
         :param b: The second number (default 0.0)
         """
 
-        assert isinstance(a, float), "Le premier nombre doit être un décimal"
-        assert isinstance(b, float), "Le deuxième nombre doit être un décimal"
-        assert b!=0, "La division requiert un second nombre non nul"
+        assert isinstance(a, float), "The first number may be a float"
+        assert isinstance(b, float), "The second number may be a float"
+        assert b!=0, "Division requires a second non-zero number"
         self.a = a
         self.b = b
 
@@ -30,10 +30,10 @@ class TwoNumbersOperations:
 
 
 if __name__ == "__main__":
-    a = float(input("Entrez le premier nombre : "))
-    b = float(input("Entrez le second nombre : "))
+    a = float(input("Enter the first number : "))
+    b = float(input("Enter the second number : "))
     operation = TwoNumbersOperations(a, b)
     print("Addition : ", operation.addition2numbers())
-    print("Soustraction : ", operation.substraction2numbers())
+    print("Substraction : ", operation.substraction2numbers())
     print("Multiplication : ", operation.multiplication2numbers())
     print("Division : ", operation.division2numbers())
